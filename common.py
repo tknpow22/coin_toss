@@ -178,6 +178,10 @@ class CoinImage:
 
                 result = (rimg - np.mean(rimg)) / np.std(rimg) * 16 + 64
 
+                # Keras 2.1.2 の ImageDataGenerator.flow_from_directory() で生成される画像が
+                # scale された状態で取得されるため、
+                # Model.fit_generator() 時と Model.predict() 時に同じようになるよう、
+                # あらかじめ scale しておく
                 result = CoinImage.scale(result)
 
                 # 最初のひとつだけを返す

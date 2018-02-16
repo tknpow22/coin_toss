@@ -69,7 +69,7 @@
 
   その他
 
-    うまく抽出できない場合、common.py の class CoinImage の get_img 関数で
+    うまく抽出できない場合、common.py の class CoinImage の get_img 関数内の
     cv2.HoughCircles 呼び出しの引数 param1 および param2 を調整します。
 
 ## ディレクトリ
@@ -89,15 +89,15 @@
 
 - manual_classified_coin_imgs/head
 
-  コイン画像のうち表面にあたる画像を手作業でここに格納します。
+  表面のコイン画像を格納します。
 
 - manual_classified_coin_imgs/tail
 
-  コイン画像のうち裏面にあたる画像を手作業でここに格納します。
+  裏面のコイン画像を格納します。
 
 - manual_classified_coin_imgs/other
 
-  コイン画像のうち表でも裏でもない画像を手作業でここに格納します。
+  表でも裏でもないコイン画像を格納します。
 
 訓練用データの作成
 ------------------
@@ -120,6 +120,8 @@
 
   manual_classified_coin_imgs_to_data.py がコイン画像を格納します。
 
+  参考データ: http://www.koutou-software.net/misc/coin-toss/data.zip
+
 訓練
 ----
 
@@ -138,6 +140,8 @@
 - train_weights.h5
 
   訓練完了後、訓練済みのモデルの重みをこのファイルに保存します。
+
+  参考データ: http://www.koutou-software.net/misc/coin-toss/train_weights.zip
 
 テスト用画像の格納
 ------------------

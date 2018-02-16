@@ -9,7 +9,6 @@ __pycache__/
 # coin_toss
 *.jpg
 *.jpeg
-*.png
 
 *.log
 
