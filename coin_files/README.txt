@@ -1,0 +1,1 @@
+uploader_for_manual.py 使用時にコインイメージが格納されます

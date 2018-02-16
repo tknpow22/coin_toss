@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+
+# eclipse
+.settings
+.project
+.pydevproject
+
+# coin_toss
+*.jpg
+*.jpeg
+*.png
+
+*.log
+
+*.h5
+*.zip
+train_history.txt
